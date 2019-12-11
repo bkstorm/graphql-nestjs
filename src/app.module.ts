@@ -12,9 +12,6 @@ import * as responseCachePlugin from 'apollo-server-plugin-response-cache';
       debug: true,
       playground: true,
       autoSchemaFile: 'schema.gql',
-      cacheControl: {
-        defaultMaxAge: 120,
-      },
       plugins: [(responseCachePlugin as any)()],
     }),
     UserModule,
